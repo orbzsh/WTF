@@ -1,4 +1,4 @@
-###**记录MD语法**
+###记录MD语法
 		# 一级标题
 		## 二级标题
 		### 三级标题
@@ -95,4 +95,4 @@ Github    |[Github](https://github.com/orbzsh)
 Email     |<925511765@qq.com>
 Copyright |&copy;Orbzsh
 
-参考网站[MD官方](http://wowubuntu.com/markdown/)
+参考网站[MD快速入门](http://wowubuntu.com/markdown/)
