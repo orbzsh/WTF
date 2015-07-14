@@ -93,10 +93,8 @@ Jacki|20  |women
 ```
 ------------------------------------
 Weibo     |[Wocin](http://weibo.com/kong110)
-----------|
+----------|---------------------------------
 Github    |[Github](https://github.com/orbzsh)
-----------|
 Email     |<925511765@qq.com>
-----------|
 Copyright |&copy;Orbzsh
 
