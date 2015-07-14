@@ -30,7 +30,7 @@
 [](),方括号里是显示的文本,圆括号里是链接的地址
 ![](),前面的！号表示图片链接
 ```
-	[Google](http://www.google.com.tw)
+	>\[Google\]\(http://www.google.com.tw\)
 
 ###分割线
 
