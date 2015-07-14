@@ -21,11 +21,12 @@
 
 
 ###链接
->[](),方括号里是显示的文本,圆括号里是链接的地址
+```
+[](),方括号里是显示的文本,圆括号里是链接的地址
 ![](),前面的！号表示图片链接
 ![](http://ww4.sinaimg.cn/bmiddle/aa397b7fjw1dzplsgpdw5j.jpg)
 [Google](http://www.google.com.tw)
-
+```
 
 ###分割线
 
