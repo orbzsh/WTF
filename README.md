@@ -70,7 +70,7 @@ name |age |sex
 Jack |21  |man
 Jacki|20  |women
 ```
-显示效果：
+
 name |age |sex
 ---- |----|----
 Jack |21  |man
