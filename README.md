@@ -26,10 +26,12 @@
 +	无序列表3
 
 ###链接
-[Google](http://www.google.com.tw)"Title for Google"
+[Google](http://www.google.com.tw)
+<925511765@qq.com>
 ```
 [](),方括号里是显示的文本,圆括号里是链接的地址
 ![](),前面的！号表示图片链接
+<>,邮件链接，<>中放入邮件地址
 ```
 
 ###分割线
