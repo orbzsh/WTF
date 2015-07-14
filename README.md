@@ -95,6 +95,6 @@ Jacki|20  |women
 &copy;
 ```
 ------------------------------------
-|Name  |Age |Sex |Copyright   |Weibo 					  		 |
-|----- |----|----|------------|----------------------------------|
-|Orbzsh|25  |Man |&copy;Orbzsh|[Weibo](http://weibo.com/kong110) |
+|Name  |Age |Sex |Copyright   |Weibo 					  		 |Github                              |
+|----- |----|----|------------|----------------------------------|------------------------------------|
+|Orbzsh|25  |Man |&copy;Orbzsh|[Wocin](http://weibo.com/kong110) |[Github](https://github.com/orbzsh) |
