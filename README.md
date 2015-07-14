@@ -92,6 +92,11 @@ Jacki|20  |women
 &copy;
 ```
 ------------------------------------
-|Name  |Email             |Sex         |Copyright   |Weibo 					  		  |Github                              |
-|------|------------------|------------|------------|---------------------------------|------------------------------------|
-|Orbzsh|<925511765@qq.com>|Man         |&copy;Orbzsh|[Wocin](http://weibo.com/kong110)|[Github](https://github.com/orbzsh) |
+Weibo     |[Wocin](http://weibo.com/kong110)
+----------|-----------------------------------
+Github    |[Github](https://github.com/orbzsh)
+----------|-----------------------------------
+Email     |<925511765@qq.com>
+----------|-----------------------------------
+Copyright |&copy;Orbzsh
+
