@@ -30,9 +30,6 @@
 
 ------------------------------------
 ###链接
-翻墙：[Google](http://www.google.com.tw)
-
-邮件：<925511765@qq.com>
 ```
 [](),方括号里是显示的文本,圆括号里是链接的地址
 ![](),前面的！号表示图片链接
@@ -95,6 +92,6 @@ Jacki|20  |women
 &copy;
 ```
 ------------------------------------
-|Name  |Age |Sex |Copyright   |Weibo 					  		 |Github                              |
-|----- |----|----|------------|----------------------------------|------------------------------------|
-|Orbzsh|25  |Man |&copy;Orbzsh|[Wocin](http://weibo.com/kong110) |[Github](https://github.com/orbzsh) |
+|Name  |Email             |Sex         |Copyright   |Weibo 					  		  |Github                              |
+|------|------------------|------------|------------|---------------------------------|------------------------------------|
+|Orbzsh|<925511765@qq.com>|Man         |&copy;Orbzsh|[Wocin](http://weibo.com/kong110)|[Github](https://github.com/orbzsh) |
