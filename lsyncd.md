@@ -42,8 +42,8 @@
 > ####**sync**
 >	里面是定义同步参数,可以继续使用**maxDelays**来重写**settings**的全局变量,一般第一个参数指定**lsyncd**以什么模式执行:**rsync**、**rsyncssh**、**direct**三种模式
 
->	+
-	+ **default.rsync**: 本地目录间同步,使用**rsync**,也可以达到使用**ssh**形式的远程**rsync**效果，或**daemon**方式连接远程**rsyncd**进程
+>	+ 
+>	+ **default.rsync**: 本地目录间同步,使用**rsync**,也可以达到使用**ssh**形式的远程**rsync**效果，或**daemon**方式连接远程**rsyncd**进程
 	+ **default.direct**: 本地目录间同步,使用**cp**、**rm**、等命令完成差异文件备份
 	+ **default.rsyncssh**: 同步到远程主机目录,rsync的ssh模式,需要使用key认证
 
