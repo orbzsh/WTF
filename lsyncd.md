@@ -16,6 +16,17 @@
 		maxProcesses = 7,
 		-- nodaemon = true,
 	}
+	
+	-- 本地目录同步,direct: cp/rm/mv。适用：500+万文件,变动不大
+	sync {
+		default.direct,
+		source = "/tmp/src",
+		target = "/tmp/dest",
+		delay = 1,
+		maxProcesses = 1
+	}
+
+	-- 本地目录同步,rsync模式:rsync
 	sync{
 	default.rsync,
 	source = "/tmp/src",
@@ -26,6 +37,60 @@
 			archive = true,
 			compress = true,
 			verbose = true,
+			bwlimit = 2000,
+		}
+	}
+
+	-- 远程目录同步,rsync模式+rsyncd daemon
+	sync {
+		default.rsync,
+		source = "/tmp/src",
+		target = "user@192.168.1.10::module",
+		delete = "running",
+		exclude = { ".*", ".tmp"},
+		delay = 30,
+		init = false,
+		rsync = {
+			binary = "/usr/bin/rsync",
+			archive = true,
+			compress = true,
+			verbose = true,
+		}
+	}
+
+	--远程目录同步, rsync模式+ssh shell
+	sync {
+		default.rsync,
+		source = "/tmp/src",
+		target = "192.168.1.10:/tmp/dest",
+		maxDelay = 5,
+		delay = 30,
+		init = true,
+		rsync = {
+			binary = "/usr/bin/rsync",
+			archive = true,
+			compress = true,
+			verbose = true,
+		}
+	}
+
+	--远程目录同步,rsync模式+rsyncssh
+	sync {
+		default.rsync,
+		source = "/tmp/src",
+		host = "192.168.1.10",
+		targetdir = "/tmp/dest",
+		maxDelay = 5,
+		delay = 30,
+		init = true,
+		rsync = {
+			binary = "/usr/bin/rsync",
+			archive = true,
+			compress = true,
+			verbose = true,
+		}
+		ssh = {
+			port = 57522
 		}
 	}
 ------
@@ -61,7 +126,7 @@
 	+ ?匹配任何字符,但不包括/
 	+ *匹配0或多个字符,但不包括/
 	+ **匹配0或多个字符,可以是/
->	+ **delete** 为了保持**target**和**source**完全同步,Lsyncd默认会**delete = true**来允许同步删除.
+>	+ **delete** 为了保持**target**和**source**完全同步,Lsyncd默认会**delete = true**来允许同步删除
 
 > ####**rsync**
 >	+ **bwlimit** 限速，单位**kb/s**,与**rsync**相同
