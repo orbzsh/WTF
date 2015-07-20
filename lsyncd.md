@@ -61,7 +61,8 @@
 	+ ?匹配任何字符,但不包括/
 	+ *匹配0或多个字符,但不包括/
 	+ **匹配0或多个字符,可以是/
->	+ **delete** 为了保持**target**和**source**完全同步,Lsyncd默认会**delete = true**来允许同步删除.它除了**false**,还有**startup**、**running**值
+>	+ **delete** 为了保持**target**和**source**完全同步,Lsyncd默认会**delete = true**来允许同步删除.
+
 > ####**rsync**
 >	+ **bwlimit** 限速，单位**kb/s**,与**rsync**相同
 >	+ **compress** 压缩传输默认为**true**.在带宽与**cpu**负载之间权衡,本地目录同步可以考虑把它设为**false**
