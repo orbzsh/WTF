@@ -67,4 +67,12 @@
 >	+ **compress** 压缩传输默认为**true**.在带宽与**cpu**负载之间权衡,本地目录同步可以考虑把它设为**false**
 >	+ **perms** 默认保留文件权限
 > ####**lsyncd.conf**可以有多个**sync**,各自的**source**,各自的**target**,各自的模式,互不影响
+
 ------
+###启动lsyncd
+####使用命令行加载配置文件,启动守护进程,自动同步目录
+	lsyncd -log Exec /etc/lsyncd.conf
+
+------
+###lsyncd的其他功能
+**官方手册**[Lsyncd ManPage](https://github.com/axkibe/lsyncd/wiki/Manual%20to%20Lsyncd%202.1.x)
