@@ -31,9 +31,8 @@
 
 ###lsyncd.conf配置文件说明
 **settings**里面是全局配置,--开头表示注释,下面是常用选项说明:
-```
-+ **logfile** 定义日志文件
-+ **statusFile** 定义状态文件
-+ nodaemon = true 表示不启用守护模式,默认
-+ statusInterval 
-```
+
+	\+ **logfile** 定义日志文件
+	\+ **statusFile** 定义状态文件
+	\+ nodaemon = true 表示不启用守护模式,默认
+	\+ statusInterval 
