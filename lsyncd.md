@@ -30,7 +30,7 @@
 	}
 
 ###lsyncd.conf配置文件说明
-> **settings**里面是全局配置,--开头表示注释,下面是常用选项说明:
+> ####**settings**里面是全局配置,--开头表示注释,下面是常用选项说明:
 >
 > 	+ **logfile** 定义日志文件
 > 	+ **statusFile** 定义状态文件
@@ -39,11 +39,11 @@
 > 	+ **maxProcesses** 同步进程的最大个数,假如同时有20个文件需要同步,而 **maxProcesses = 8**,则最大能看到有8个rsync进程
 > 	+ **maxDelays** 累计到多少监控的事件激活一次同步,即使后面的**delay** 延迟时间还未到
 
-> **sync**
+> ####**sync**
 >	里面是定义同步参数,可以继续使用**maxDelays**来重写**settings**的全局变量,一般第一个参数指定**lsyncd**以什么模式执行:**rsync**、**rsyncssh**、**direct**三种模式
 
 >	+ **default.rsync**: 本地目录间同步,使用**rsync**,也可以达到使用**ssh**形式的远程**rsync**效果，或**daemon**方式连接远程**rsyncd**进程
-	  **default.direct**: 本地目录间同步,使用**cp**、**rm**、等命令完成差异文件备份
-	  **default.rsyncssh**: 同步到远程主机目录,rsync的ssh模式,需要使用key认证
+	+ **default.direct**: 本地目录间同步,使用**cp**、**rm**、等命令完成差异文件备份
+	+ **default.rsyncssh**: 同步到远程主机目录,rsync的ssh模式,需要使用key认证
 >	+ **source** 同步的源目录,使用绝对路径
 >	+ **target** 定义目的地址,
