@@ -124,8 +124,8 @@
 	+ 如果规则以斜线**/**开头,则从头开始要匹配全部
 	+ 如果规则以**/**结尾,则要匹配监控路径的末尾
 	+ **?**匹配任何字符,但不包括**/**
-	+ **\***匹配0或多个字符,但不包括**/**
-	+ **\*\***匹配0或多个字符,可以是**/**
+	+ *匹配0或多个字符,但不包括**/**
+	+ **匹配0或多个字符,可以是**/**
 >	+ **delete** 为了保持**target**和**source**完全同步,Lsyncd默认会**delete = true**来允许同步删除
 
 > ####**rsync**
@@ -142,4 +142,4 @@
 
 ------
 ###lsyncd的其他功能
-	**官方手册**[Lsyncd ManPage](https://github.com/axkibe/lsyncd/wiki/Manual%20to%20Lsyncd%202.1.x)
+	官方手册[Lsyncd ManPage](https://github.com/axkibe/lsyncd/wiki/Manual%20to%20Lsyncd%202.1.x)
