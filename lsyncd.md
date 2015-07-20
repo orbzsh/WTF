@@ -36,3 +36,8 @@
 + **statusFile** 定义状态文件
 + **nodaemon = true** 表示不启用守护模式,默认
 + **statusInterval** 将lsyncd的状态写入上面的statusFile的间隔,默认10秒
++ **maxProcesses** 同步进程的最大个数,假如同时有20个文件需要同步,而 **maxProcesses = 8**,则最大能看到有8个rsync进程
++ **maxDelays** 累计到多少监控的事件激活一次同步,即使后面的**delay** 延迟时间还未到
+
+**sync**
+
