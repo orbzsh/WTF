@@ -2,7 +2,7 @@
 -	./bash_profile 用户登录的时候读取,其中包含的命令被执行
 -	./bashrc 启动新的shell时被读取,并执行
 -	./bash_logout shell登出时被读取
-
+------
 ###**shell**初始化过程	
 	if [ -f /etc/profile ];then
 		/bin/bash /etc/profile
@@ -13,12 +13,12 @@
 	elif [ -f ./profile ];then
 		/bin/bash ./profile
 	fi
-	
+------	
 ###**set**选项介绍
 -	**set -o errexit** 设置这个选项后,当一个命令执行失败时,shell立即退出
 -	**set -o noexec** 当设置后,shell读取命令,但不会执行它们,可以用来检测shell脚本是否有语法错误
 -	**set -o strace** 当设置后,对于每一条要执行的命令,在执行之前,输出trace到stderr
-
+------
 ###**trap**
 ####trap对信号的处理方式
 1.	trap 'commands' signal 当接收到信号时,执行引号中的命令
@@ -38,7 +38,7 @@
 	但是如果在另一个终端执行**kill -SIGINT pid**,会看到原先终端没有任何反应,等待10秒后原先终端输出interrupted...
 
 >	Bash 终端的默认行为是这样的,当按下CTRL+C的时候,会向当前的整个进程组发出SIGINT信号,而这个脚本的sleep是由当前脚本调用的,是这个脚本的子进程,默认是在同一个进程组的,所以也会收到SIGINT信号后并停止执行,返回主进程以后trap捕捉到信号
-
+------
 ###判断
 字符串判断
 ```
@@ -75,3 +75,4 @@
 	-o　　　　　　　 或 
 	!　　　　　　　　非
 ```
+------
