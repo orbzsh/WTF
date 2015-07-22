@@ -61,4 +61,3 @@ client
 -	client_addr:
 -	datacenter:
 -	data_dir:
--	
